@@ -63,7 +63,7 @@ h2{
 }
 
 .name-in-header{
-    color: rgb(46, 68, 64);
+    color: rgb(128, 43, 19);
     border-top: 1px solid rgba(94, 94, 94,0.5);
     letter-spacing: 1px;
     padding: 10px 0;
@@ -135,7 +135,11 @@ h3{
     text-decoration: none;
     /* font-weight: bold; */
     font-style: italic;
-    color:rgb(3, 32, 94);
+    color: rgb(66, 51, 17);
+    letter-spacing: 1px;
+}
+.project-links:hover{
+    color: darkgreen;
 }
 .item{
     margin: 10px;
@@ -146,15 +150,17 @@ h3{
     text-align: center;
 }
 .project-heading{
-    color: rgb(3, 32, 94);
+    color: white;
+    /* color: rgb(184, 11, 37); */
     padding: 5px;
 }
 
 .discription{
     border-bottom: 1px solid rgb(61, 179, 120);
     padding: 15px;
-    color: rgb(17, 8, 17);
+    color: cornsilk;
     font-style: italic;
+    font-size: 19px;
 }
 
 /* .discription:last-child{ */
@@ -211,7 +217,7 @@ img.filling-image{
     }
     
     .name-in-header{
-        color: rgb(46, 68, 64);
+        color: rgb(67, 179, 16);
         border-top: none;
         letter-spacing: 1px;
         padding: 10px 0;
