@@ -1,0 +1,349 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    /* background-color: rgb(62, 105, 92); */
+    background-color: rgb(55, 214, 76);
+}
+div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    margin: 5px 5px;
+    border-radius: 8px;
+    align-items: center;
+    transition: background-color 200ms;
+}
+
+h2{
+    font-family: 'Yusei Magic',sans-serif;
+    font-size: 20px;
+}
+
+.name-in-header{
+    color: rgb(46, 68, 64);
+    border-top: 1px solid rgba(94, 94, 94,0.5);
+    letter-spacing: 1px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 23px;
+}
+
+img.profile-image{
+    /* fill: coral; */
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 150px;
+    /* height: 150px; */
+    object-fit: contain;
+    border-radius: 70px;
+    transition: all 200ms;
+}
+
+.head-of-profile{
+    background: url(./images/profile-header.jpg);
+    margin: 0;
+    background-size: cover;
+}
+
+section{
+    margin: 5px 0;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+}
+
+.about-projects{
+    background-color: rgb(97, 184, 212);
+    /* rgb(55, 214, 76) */
+    padding: 5px 5px 0 5px;
+}
+
+.project-items{
+    margin: 15px 0;
+    background-color: inherit;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.project-image{
+    width: 300px;
+    min-height: 200px;
+    /* height: 300px; */
+    border-radius: 0;
+    padding: 7px;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+}
+
+h3{
+    font-family: 'Yusei Magic',sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+#enviro{
+    background: url(./images/project-images/EnviroBackground.jpg);
+    background-size: cover;
+}
+.project-links{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(0, 66, 88);
+}
+.item{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: violet; */
+    text-align: center;
+}
+.project-heading{
+    color: teal;
+    padding: 5px;
+}
+
+.discription{
+    border-bottom: 1px solid rgb(61, 179, 120);
+    padding: 15px;
+    color: purple;
+    font-style: italic;
+}
+
+/* .discription:last-child{ */
+    /* border: none; */
+/* }     */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid white;
+    /* margin: 3px 0; */
+    background-color: rgb(67, 131, 204);
+}
+.link-logos{
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.filling-space{
+    background-color: white;
+    border-radius: 0;
+    padding: 20px;
+    border: 2px solid rgb(141, 174, 218);
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+img.filling-image{
+    width: 300px;
+}
+
+@media (min-width:600px){
+    div{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        margin: 5px 5px;
+        border-radius: 8px;
+        align-items: center;
+        transition: background-color 200ms;
+        justify-content: space-around;
+    }
+    
+    h2{
+        font-family: 'Yusei Magic',sans-serif;
+        font-size: 20px;
+    }
+    
+    .name-in-header{
+        color: rgb(46, 68, 64);
+        border-top: none;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    img.profile-image{
+        /* fill: coral; */
+        margin: 10px 0;
+        padding: 10px 20px;
+        width: 150px;
+        /* height: 150px; */
+        /* object-fit: contain; */
+        border-radius: 70px;
+        transition: all 200ms;
+        border-right: 1px solid teal;
+    }
+    
+    .head-of-profile{
+        background: url(./images/profile-header.jpg);
+        margin: 0;
+        background-size: cover;
+        flex-direction: row;
+    }
+    
+    section{
+        margin: 5px 0;
+        /* border: 1px solid white; */
+        border-radius: 8px;
+    }
+    
+    .about-projects{
+        background-color: rgb(97, 184, 212);
+        /* rgb(55, 214, 76) */
+        padding: 5px 5px 0 5px;
+    }
+    
+    .project-items{
+        margin: 15px 0;
+        background-color: inherit;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    
+    .project-image{
+        width: 300px;
+        min-height: 200px;
+        /* height: 300px; */
+        border-radius: 0;
+        padding: 7px;
+        /* border: 1px solid white; */
+        border-radius: 5px;
+    }
+    
+    h3{
+        font-family: 'Yusei Magic',sans-serif;
+        font-size: 17px;
+        letter-spacing: 2px;
+        font-style: italic;
+    }
+    
+    #enviro{
+        background: url(./images/project-images/EnviroBackground.jpg);
+        background-size: cover;
+    }
+    .project-links{
+        text-decoration: none;
+        font-weight: bold;
+        font-style: italic;
+        color:rgb(0, 66, 88);
+    }
+    .item{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: violet; */
+        text-align: center;
+    }
+    .project-heading{
+        color: teal;
+        padding: 5px;
+    }
+    
+    .discription{
+        border-bottom: 1px solid rgb(61, 179, 120);
+        padding: 15px;
+        color: purple;
+        font-style: italic;
+    }
+    
+    /* .discription:last-child{ */
+        /* border: none; */
+    /* }     */
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 1px solid white;
+        /* margin: 3px 0; */
+        background-color: rgb(67, 131, 204);
+    }
+    .link-logos{
+        width: 25px;
+        height: 25px;
+        margin: 5px 5px;
+        border: 1px solid white;
+        padding: 5px;
+        border-radius: 10%;
+    }
+    
+    .filling-space{
+        background-color: white;
+        border-radius: 0;
+        padding: 20px;
+        border: 2px solid rgb(141, 174, 218);
+        color: black;
+        font-size: 25px;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    img.filling-image{
+        width: 300px;
+    }
+}
+
+.lazy-things{
+    padding: 10px 10px;
+    background-color: rgba(63, 65, 177, 0.164);
+}
